@@ -229,6 +229,23 @@ img {
   background-color: var(--button-hover-color);
 }
 
+/* modal form css */
+.modal-form {
+  width: 528px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+}
+.modal-form-input {
+  display: block;
+  width: 100%;
+}
+.modal-form-input:not(:last-child) {
+  margin-bottom: 20px;
+}
+.modal-form-btn {
+  display: inline-block;
+}
 /* common css */
 .section.features {
   padding-top: 94px;
