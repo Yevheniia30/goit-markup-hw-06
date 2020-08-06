@@ -243,7 +243,10 @@ img {
 .modal-form-input:not(:last-child) {
   margin-bottom: 20px;
 }
-.modal-form-btn {
+.modal-form-input:focus {
+  outline: none;
+}
+.modal-form-input:focus .modal-form-btn {
   display: inline-block;
 }
 /* common css */
@@ -470,6 +473,33 @@ img {
   height: 20px;
   fill: currentColor;
 }
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form-input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  /* outline: none; */
+}
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* .subscribe-form-input:focus:valid:not(:placeholder-shown) { 
+  border: 1px solid green;
+}
+.subscribe-form-input:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}*/
 
 /* portfolio main css */
 .filter-btn {
