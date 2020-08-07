@@ -427,6 +427,7 @@ img {
   align-items: baseline;
 }
 .footer .webstudio {
+  margin-bottom: 20px;
   color: var(--clear-white-color);
 }
 .address {
