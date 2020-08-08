@@ -91,7 +91,7 @@
           для вашего бизнеса
         </h1>
 
-        <form action="" class="modal-form">
+        <!-- <form action="" class="modal-form"> 
           <input
             type="text"
             class="modal-form-input"
@@ -119,9 +119,9 @@
             cols="30"
             rows="10"
           ></textarea>
-          <button type="submit" class="modal-form-btn">Отправить</button>
-          <button class="modal-btn">Заказать услугу</button>
-        </form>
+          <button type="submit" class="modal-form-btn">Отправить</button> -->
+        <button data-modal-open class="modal-btn">Заказать услугу</button>
+        <!-- </form> -->
         <!-- </div> -->
       </section>
 
@@ -536,5 +536,33 @@
         </div>
       </div>
     </footer>
+
+    <!--modal window  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form action="" class="modal-form">
+          <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+          <button type="button" class="close-btn" data-modal-close>
+            <svg class="modal-form-icon">
+              <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <label>
+            <input type="text" />
+          </label>
+          <label>
+            <input type="tel" />
+          </label>
+          <label>
+            <input type="email" />
+          </label>
+          <textarea name="" id=""></textarea>
+          <label>
+            <input type="checkbox" />
+          </label>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
